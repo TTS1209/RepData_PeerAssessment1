@@ -8,7 +8,9 @@ output:
 
 ## Loading and preprocessing the data
 *Show any code that is needed to*
+
 *1.Load the data*
+
 *2.Process/transform the data (if necessary) into a format suitable for analysis*
 
 ```{r,echo=TRUE,message=FALSE,warning=FALSE}
