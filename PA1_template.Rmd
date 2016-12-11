@@ -181,7 +181,7 @@ Different methods for replace missing values could cause different results.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
-* For this part the weekdays() function may be of some help here. Use the dataset with the filled-in missing values for this part.*
+*For this part the weekdays() function may be of some help here. Use the dataset with the filled-in missing values for this part.*
 
 *1. Create a new factor variable in the dataset with two levels - "weekday" and "weekend" indicating whether a given date is a weekday and weekend day.*
 
@@ -189,7 +189,8 @@ Different methods for replace missing values could cause different results.
 
 **1. Create a new factor variable in the dataset with two levels - "weekday" and "weekend" indicating whether a given date is a weekday and weekend day.**
 
-*DayType* is the new column indicating if the day is a weekday day or a weekend day: the first ten values of the new table are shown below
+*DayType* is the new column indicating if the day is a weekday day or a weekend day: 
+the first ten values of the new table are shown below
 
 ```{r echo=TRUE}
 # Create variable with date in correct format 
