@@ -110,9 +110,9 @@ ST %>% select(time, steps) %>% filter(steps == max(ST$steps))
 
 ## Imputing missing values
 
-* Note that there are number of days/intervals where there are missing values (coded as NA). The presence of missing days may introduce bias into some calculations or summaries of the data.**
+*Note that there are number of days/intervals where there are missing values (coded as NA). The presence of missing days may introduce bias into some calculations or summaries of the data.*
 
-**1.Calculate the report the total number of missing values in the dataset*
+*1.Calculate the report the total number of missing values in the dataset*
 
 *2.Devise a strategy for filling in all of the missing values in the dataset.*
 
@@ -129,7 +129,9 @@ ACT %>% filter(is.na(steps)) %>% summarize(missing_values =n())
 ```
 
 **2.Replace missing values**
+
 The rounded values of the average 5 minute interval is used to replace the NA values.
+
 *CompleteSteps* is the new column without missing values.
 
 ```{r echo=TRUE}
@@ -140,6 +142,7 @@ round(StepsPerTime$steps[match(activity$interval,
 ```
 
 **3. New dataset that is equal to the original dataset but with the missing data filled in**
+
 The first ten values of the new dataset are shown below.
 
 ```{r echo=TRUE}
